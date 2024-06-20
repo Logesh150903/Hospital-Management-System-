@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password</title>
+    <link rel = "stylesheet" href = "css/styles.css">
+    <style>
+        body{
+        background-image: url('./images/background.png'); /* Replace 'background.jpg' with your image URL */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src = "images/logo.png" alt = "site logo">
+    </header>
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Forget Password</h2>
+            <form  action="forget_password_process.php" method="POST" >
+                <div class="input-box" name=username> 
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input name="username" type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box" name= new-password >
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input name= new-password type="password"  required>
+                    <label>new password</label>
+                </div>
+                <div class="input-box" name= re-enter-password>
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input name= re-enter-password type="password"  required>
+                    <label>re-enter-Password</label>
+                </div>
+                
+                <button type="submit" class="btn">Reset Passwordr</button>
+
+             </form>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

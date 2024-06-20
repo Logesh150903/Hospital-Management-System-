@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body{
+        background-image: url('./images/background.png'); /* Replace 'background.jpg' with your image URL */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        }
+        img{
+     width: 168px;
+     display: block;
+     background: transparent;
+     margin-left: 2rem;
+     backdrop-filter: blur(10px);
+     display: flex;
+    }
+    .btnLogin-popup1{
+            width: 130px;
+            height: 50px;
+            background: transparent;
+            border: 2px solid rgba(255,255,255,.5);
+            outline: none;
+            border-radius: 6px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 30px rgba(0,0,0,.5);
+            cursor: pointer;
+            font-size: 1.1em;
+            color: #af1616;
+            margin-left: 30px;
+            transition: .5s;
+        }
+        .btnLogin-popup1:hover{
+            background: #fff;
+            color: #162938;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src = "images/logo.png" alt = "site logo"></a>
+        <a href = "login.html"><button class="btnLogin-popup1" >Back</button></a>
+    </header>
+    <div class="wrapper">
+        
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="login_process1.php" method="post">
+                <div class="input-box" name="email">
+                    <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
+                    <input name="email" type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box" name="password">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input name="password" type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remeber me</label>
+                    <a href="forget_password1.html">forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                
+            </form>
+        </div>
+    </div>
+
+    
+     
+  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        
+  
+</body>
+</html>

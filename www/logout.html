@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logout Page</title>
+  <style>
+    body {background-image: url('./images/background.png'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .logout-container {
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4285f4;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #357ae8;
+    }
+  </style>
+</head>
+<body>
+  <div class="logout-container">
+    <h1>Logout Page</h1>
+    <p>Are you sure you want to logout?</p>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script>
+    // Assuming you have a logout endpoint on the server-side
+    const logoutBtn = document.getElementById('logoutBtn');
+
+    logoutBtn.addEventListener('click', () => {
+      // Perform logout logic (e.g., sending a request to the server)
+      // Redirect to the login page or perform other actions as needed
+      // For demonstration purposes, we'll simulate a redirection after 2 seconds
+      setTimeout(() => {
+        window.location.href = 'login.html';
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
